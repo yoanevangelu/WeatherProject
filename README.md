@@ -1,4 +1,4 @@
-# Almanac — a weather app
+# A weather app
 
 A small React + Vite weather app styled like an instrument panel / almanac
 page. Search any city, see the current reading, next 12 hours, and a
