@@ -1,0 +1,75 @@
+.ledger {
+  padding: 1.2rem 0 0.4rem;
+}
+
+.ledger__title {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--paper-dim);
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+
+.ledger__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ledger__row {
+  display: grid;
+  grid-template-columns: 2.6rem 1.4rem 1fr 1.8rem 5rem 1.8rem;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--rule);
+  font-size: 0.86rem;
+}
+
+.ledger__day {
+  color: var(--paper);
+}
+
+.ledger__icon {
+  color: var(--sky);
+}
+
+.ledger__label {
+  color: var(--paper-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ledger__min {
+  color: var(--paper-dim);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger__max {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.ledger__bar {
+  position: relative;
+  height: 3px;
+  background: var(--rule);
+  border-radius: 2px;
+}
+
+.ledger__bar-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--brass);
+  border-radius: 2px;
+}
+
+@media (max-width: 480px) {
+  .ledger__row {
+    grid-template-columns: 2.2rem 1.2rem 1fr 1.6rem 3.4rem 1.6rem;
+    font-size: 0.8rem;
+  }
+}

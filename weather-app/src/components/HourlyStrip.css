@@ -1,0 +1,49 @@
+.hourly {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hourly__title {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--paper-dim);
+  font-weight: 500;
+  margin: 0 0 0.7rem;
+}
+
+.hourly__track {
+  display: flex;
+  gap: 1.3rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  scrollbar-width: thin;
+}
+
+.hourly__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  min-width: 2.6rem;
+}
+
+.hourly__time {
+  font-size: 0.75rem;
+  color: var(--paper-dim);
+}
+
+.hourly__icon {
+  color: var(--sky);
+}
+
+.hourly__temp {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.hourly__pop {
+  font-size: 0.68rem;
+  color: var(--brass-bright);
+}

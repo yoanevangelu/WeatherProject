@@ -1,0 +1,42 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--rule);
+}
+
+.details__cell {
+  padding: 0.9rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-left: 1px solid var(--rule);
+}
+
+.details__cell:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.details__value {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.details__label {
+  font-size: 0.68rem;
+  color: var(--paper-dim);
+}
+
+@media (max-width: 480px) {
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .details__cell:nth-child(2) {
+    border-left: 1px solid var(--rule);
+  }
+  .details__cell:nth-child(odd) {
+    border-left: none;
+    padding-left: 0;
+  }
+}
