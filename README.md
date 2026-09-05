@@ -46,3 +46,5 @@ src/
 - Click the ⌖ button next to the search field to use your current
   location (needs browser geolocation permission).
 - Toggle °C/°F in the header any time; the app refetches in the new unit.
+
+Visit at: [WeatherProject](https://yoanevangelu.github.io/WeatherProject/)
