@@ -58,7 +58,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app__header">
-        <span className="app__brand">Weather-App</span>
+        <span className="app__brand">WeatherProject</span>
         <button
           type="button"
           className="app__unit"
